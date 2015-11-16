@@ -7,4 +7,4 @@ fi
 
 QUEUE_LENGTH=$(redis-cli -h ${REDIS_HOST} llen ${QUEUE_NAME})
 
-echo "${QUEUE_NAME}: ${QUEUE_LENGTH}"
+echo "queue-length ${QUEUE_NAME}: ${QUEUE_LENGTH}"
